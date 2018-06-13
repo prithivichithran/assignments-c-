@@ -1,6 +1,5 @@
 # Prerequisites
 *.d
-*executable
 
 # Object files
 *.o
@@ -36,6 +35,8 @@
 *.i*86
 *.x86_64
 *.hex
+*executable
+
 
 # Debug files
 *.dSYM/
