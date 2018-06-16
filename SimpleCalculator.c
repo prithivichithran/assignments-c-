@@ -19,7 +19,7 @@ int main()
         printf("%.2f * %.2f =%.2f\n",a,b,c=a*b);
         break;
         case 4:
-        if(b==0)
+        if(b==0 || a==0)
         {
         printf("Cannot divide by Zero\n");
         }
