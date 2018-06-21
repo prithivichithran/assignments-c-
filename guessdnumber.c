@@ -7,7 +7,7 @@ int main()
     srand((unsigned)time(&t)); // initializing random numbers
     int a,guess,n,mynum;
     mynum=rand()%11; // get the random number
-    printf("This is guess that number game\nYou have 5 tries you must guess the number between 0 to 10\n");
+    printf("This is guess that number game\nYou have 5 tries\nyou must guess the number between 0 to 10\n");
     for(n=5;n>0;--n)
     {
         printf("You have %d Tries Left\n",n);
@@ -17,19 +17,18 @@ int main()
         {printf("You have Guessed The Number %d correctly with %i tries left\n",mynum,n);
          break;
         }
-        else if(0<guess>20)
+        else if(guess<0 || guess>20)
         {printf("Enter The NUmber Between 0 to 10 You Have Entered %i\n",guess);
         }
         else if(mynum<guess)
-        {printf("Your Guess %i is greater than My number *Try Again*\n",guess);
+        {printf("Your Guess %i is wrong\nmy number is less than that*Try Again*\n",guess);
         }
         else if(mynum>guess)
-        {printf("Your Guess %i is lesser than my number *Try Again*\n",guess);
+        {printf("Your Guess %i is wrong\nmy number is greater than that*Try Again*\n",guess);
         }
-        else
-        {
-        printf("You Have Failed This Game\nYou Have Finished Your Tries\nAnd my number is %i",mynum);
-        }
+    }
+    if(n==0)
+    {printf("You Have Failed This Game\nYou Have Finished Your Tries\nAnd my number is %i",mynum);
     }
 
 }
