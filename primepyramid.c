@@ -21,7 +21,7 @@ return(0);
 }
 int main()
 {
-int i,j,k,rows,num;
+int i,j,k,rows,num=0;
 printf("Enter number of rows: ");
 scanf("%d",&rows);
 for(i=1; i<=rows;i++)
